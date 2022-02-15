@@ -7,7 +7,7 @@ struct Punto{
 };
 
 void mostrarPunto (Punto p){
-	cout<<"Punto "<<" ("<<p.x<<", "<<p.y<<")"<<endl;
+	cout<<"Punto "<<" ("<< p.x <<", "<< p.y <<")"<<endl;
 }
 
 void cuadrante (Punto p){
@@ -89,7 +89,6 @@ int main(){
 	cout<<"Punto a ("<<a.x<<", "<<a.y<<")"<<endl;
 		
 	cout<<"Punto b ("<<b.x<<", "<<b.y<<")"<<endl;
-	
 	
 	
 	Punto c;
