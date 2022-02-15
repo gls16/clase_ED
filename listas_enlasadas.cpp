@@ -33,6 +33,20 @@ void imprimir(Producto * cab){
 	}
 }
 
+void InsertarFinal(Producto * cab, string n, float p){
+	Producto* nuevo = new Producto;
+	nuevo->nom=n;
+	nuevo->pre=p; 
+	Producto* aux=cab;
+	
+	while(aux->sig!=NULL)
+	
+		aux=aux->sig;
+	
+	aux->sig=nuevo;
+	nuevo->sig=NULL;
+}
+
 int main(){
 	
 	Producto* cab =NULL;
@@ -65,6 +79,9 @@ int main(){
 		}
 		
 		imprimir(cab);
-		
+		cout<<"ingrese el noombre del producto"<<endl;cin>>n;
+		cout<<"ingrese el valor del producto"<<endl;cin>>p;
+		InsertarFinal(cab,n,p);
+		imprimir(cab);
 	return 0;
 }
